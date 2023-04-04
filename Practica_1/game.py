@@ -52,4 +52,5 @@ end_time = datetime.now()
 total_time = end_time - init_time
 # Mostramos ese tiempo en segundos.
 print("Respondiste "+str(correct_asnwer_counter)+" respuestas correctas")
+print("Respondiste "+str(times-correct_asnwer_counter)+" respuestas incorrectamente")
 print(f"\n Tardaste {total_time.seconds} segundos.")
