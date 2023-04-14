@@ -13,7 +13,7 @@ notas_2 = [30, 95, 28, 84, 84, 43, 66, 51, 4, 11, 58, 10, 13, 34, 96, 71, 86, 37
 95, 19, 47, 15, 31, 39, 15, 74, 33, 57, 10]
 
 #A)
-nombres = nombres.split(",")
+nombres = nombres.replace("'","").replace("\n","").replace(" ","").split(",")
 alumnos = list(zip(nombres,notas_1,notas_2))
 print('Las notas de los estudiantes son ',alumnos)
 
